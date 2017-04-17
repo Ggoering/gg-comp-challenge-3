@@ -1,16 +1,29 @@
 * {
   font-family: Roboto;
   box-sizing: border-box;
+  color: #929DAF;
 }
 
 body, html {
+  border: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   display: flex;
   flex-direction: row;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+nav p {
+  padding-left: 15px;
 }
 
 .main-wrapper {
@@ -21,8 +34,8 @@ body {
   display: inline-block;
   width: 200px;
   min-width: 200px;
+  font-weight: 700;
   background-color: #354052;
-  color: #929DAF;
 }
 
 .nav-sidebar-profile {
@@ -35,7 +48,7 @@ body {
 }
 
 .nav-sidebar-section {
-padding: 30px 0 30px 30px;
+padding: 30px 0 30px 0;
 border-top: 2px solid black;
 }
 
@@ -48,6 +61,7 @@ margin-bottom: 20px;
   height: 40px;
   margin: 0;
   line-height: 40px;
+  padding-left: 45px;
 }
 
 .nav-link:hover {
@@ -63,6 +77,8 @@ display: flex;
 .search-section-button {
   height: 60px;
   width: 60px;
+  border: 1px solid #929DAF;
+  border-left: none;
   float: right;
 }
 
@@ -89,6 +105,7 @@ header {
 
 h1 {
   margin: 7px 0 7px 0;
+  color: #525b6b;
 }
 
 .header-location {
@@ -115,6 +132,9 @@ margin-right: 45px;
 
 .header-button {
   height: 36px;
+  color: #525b6b;
+  border: 1px solid #929DAF;
+  font-weight: 700;
 }
 
 .nav-header {
@@ -123,18 +143,22 @@ margin-right: 45px;
   justify-content: space-between;
   align-items: center;
   max-width: 770px;
-  height: 36px;
+  min-width: 770px;
+  height: 56px;
   margin-left: 45px;
 }
 
 .nav-header-button {
   margin-right: 10px;
   background: none;
-  border: none;
+  border: 3px solid transparent;
+  height: 56px;
+  font-weight: 700;
 }
 
 .nav-header-button:hover {
     border-bottom: 3px solid #1DA1F2;
+    color: #525b6b;
 }
 
 .main-expansion {
@@ -163,7 +187,7 @@ margin-right: 45px;
   height: 160px;
   min-width: 160px;
   min-height: 160px;
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
   border-radius: 100%;
   background-color: #EDF2F6;
   font-size: 35px;
@@ -197,10 +221,10 @@ margin-right: 45px;
 }
 
 #chart3 {
-  border-left: 10px solid #ba2e7b;
+  border-left: 10px solid #d2d7db;
   border-right: 10px solid #d2d7db;
     border-top: 10px solid #d2d7db;
-    border-bottom: 10px solid #d2d7db;
+    border-bottom: 10px solid #ba2e7b;
     transform: rotate(-45deg);
 }
 
@@ -264,16 +288,34 @@ table {
   width: 65%;
   text-align: left;
   background-color: white;
-  border-collapse: collapse
+  border-collapse: collapse;
+}
+
+.table-editor {
+  margin-left: 25px;
+  padding: 15px 15px 15px 30px;
+  background-color:  #7c8ca3;
+  color: white;
+  height: 20px;
+  margin-top: 14px;
+  line-height: 0px;
 }
 
 .td-title {
   width: 200px;
   max-width: 200px;
+  min-width: 200px;
+  color: #525b6b;
+  font-weight: 700;
 }
 
 td, th {
   padding: 20px;
+  font-weight: 700;
+}
+
+ .first-row {
+  color: white;
 }
 
 tr {
@@ -281,6 +323,7 @@ tr {
   width: 90%;
   margin-left: 30px;
 }
+
 tr:not(:last-child) {
     border-bottom: 1px solid #929DAF;
 }
@@ -289,7 +332,7 @@ tr:not(:last-child) {
   width: 100%;
   padding-left: 20px;
   margin-left: 0;
-  background-color: #354052;
+  background-color: #687689;
   color: white;
 }
 
@@ -297,23 +340,32 @@ tr:not(:last-child) {
   border: none;
 }
 
+h3 {
+  color: #525b6b;
+}
+
 .actions {
   margin-left: 45px;
-  flex-grow: 1;
+  width: 35%
+}
+
+.main-links {
+  width: 100%
 }
 
 .main-links a {
   display: inline-block;
   width: 100%;
-  height: 60px;
+  height: 40px;
   margin-bottom: 15px;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
   color: white;
 }
 
 .facebook-link{
 background-color: #3C5A99;
+width: 100%;
 }
 
 .twitter-link {
@@ -322,6 +374,23 @@ background-color: #3C5A99;
 
 .linkedin-link {
   background-color: #0089b7;
+}
+
+.input-links {
+  height: 40px;
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.input-links-wrapper {
+  display: flex;
+}
+
+.main-input-copy {
+  width:80px;
+  background-color: #4be5d3;
+  font-weight: 700;
+  color: white;
 }
 
 @media screen and (max-width: 1210px) {
@@ -406,5 +475,14 @@ background-color: #3C5A99;
     justify-content: center;
     align-items: center;
     padding: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .actions {
+    width: 100%;
+    margin-top: 50px;
   }
 }
