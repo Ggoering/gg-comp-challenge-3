@@ -11,10 +11,10 @@ The basic layout contains 2 main containing elements. 1. The sidebar navigation 
 
 ### Difficulties
  * There weren't too many technical difficulties as the layout approach was very effective.  Keeping the CSS to a minimum and well organized is probably the biggest challenge.  It is organized in order of element appearance, which may not be the best approach.  
-
+ * I possibly should have put divs within all the buttons in order to get the icons to fit better.  I used several pre-made sprites which was great but the spacing on the sprites was very tight and caused some headaches because borders were then used to cover up the preceding or following images.
 
 #### Original Design composition
-![Original Design](https://github.com/Ggoering/gg-comp-challenge-2/blob/master/photos-icons/static-comp-challenge-2-prototype.jpg)
+![Original Design](https://github.com/Ggoering/gg-comp-challenge-3/blob/master/assets/static-comp-challenge-3.jpg
 
 #### Link to hosted webpage
-https://ggoering.github.io/gg-comp-challenge-2/
+https://ggoering.github.io/gg-comp-challenge-3/
