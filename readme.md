@@ -1,4 +1,4 @@
-#Static Comp Challenge #3
+# Static Comp Challenge #3
 
 ## Requirements  
 The objective of this project was to take the web page layout for a hiring manager's management system and recreate it as a responsive layout for screens between 320px and 2000px in width.  Minor customization in terms of design is allowed, as well as content theme if desired.
