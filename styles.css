@@ -678,6 +678,14 @@ h3 {
 }
 
 @media screen and (max-width: 885px) {
+    body {
+        display: block;
+        text-align: center;
+    }
+    .main-expansion {
+        display: block;
+        flex-direction: row;
+    }
     .nav-sidebar {
         display: none;
     }
@@ -696,17 +704,9 @@ h3 {
 }
 
 @media screen and (max-width: 680px) {
-    body {
-        display: block;
-        text-align: center;
-    }
     header {
         padding: 0;
         font-size: 20px;
-    }
-    .main-expansion {
-        display: block;
-        flex-direction: row;
     }
     .circular-charts {
         padding: 20px;
